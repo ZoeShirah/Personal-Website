@@ -16,6 +16,12 @@ def index():
     return render_template("homepage.html")
 
 
+@app.route('/bio')
+def bio():
+    """About Me page"""
+
+    return render_template("bio.html")
+
 if __name__ == "__main__":  # pragma: no cover
 
     # while developing/debugging *********
@@ -28,7 +34,7 @@ if __name__ == "__main__":  # pragma: no cover
     # connect_to_db(app, os.environ.get("DATABASE_URL", "postgresql:///stars"))
 
     # db.create_all(app=app)
-    # PORT = int(os.environ.get("PORT", 5000))
+    PORT = int(os.environ.get("PORT", 5000))
 
     #while developing/debugging ****************
     app.run(host="0.0.0.0", port=PORT)

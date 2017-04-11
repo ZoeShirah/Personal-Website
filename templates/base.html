@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Zoe Shirah Gotch-Strain - {% block title %}PAGE TITLE GOES HERE{% endblock %}</title>
-<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Herr+Von+Muellerhoff|Italianno|Meddon|Petit+Formal+Script|Pinyon+Script|Satisfy|Tangerine" rel="stylesheet">
+
 <script src="http://code.jquery.com/jquery.js"></script>
 <!-- bootstrap -->
 <!-- Latest compiled and minified CSS -->
@@ -13,6 +13,8 @@
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href='/static/styles.css'>
 </head>
 <body>
 <nav class="navbar navbar-default">
@@ -31,9 +33,9 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="{% block nav_homepage %}{% endblock %}"><a href="/">Homepage<span class="sr-only">(current)</span></a></li>
-        <li class="{% block nav_stars %}{% endblock %}"><a href="/bio">About</a></li>
-        <li class="{% block nav_profile %}{% endblock %}"><a href="/projects">Projects</a></li>
-        <li class="{% block nav_register %}{% endblock %}"><a href="/contact">Contact</a></li>
+        <li class="{% block nav_bio %}{% endblock %}"><a href="/bio">About</a></li>
+        <li class="{% block nav_projects %}{% endblock %}"><a href="/projects">Projects</a></li>
+        <li class="{% block nav_contact %}{% endblock %}"><a href="/contact">Contact</a></li>
       </ul>
       <form class="navbar-form navbar-left" action='/search'>
         <div class="form-group">
@@ -56,6 +58,5 @@
   {% endif %}
   {% endwith %}
 {% block content %}CONTENT HERE{% endblock %}
-<script src='/static/scripts.js'></script>
 </body>
 </html>
