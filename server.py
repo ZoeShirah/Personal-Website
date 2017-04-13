@@ -22,6 +22,13 @@ def bio():
 
     return render_template("bio.html")
 
+
+@app.route('/contact')
+def contact():
+    """Contact Information Page"""
+
+    return render_template('contact.html')
+
 if __name__ == "__main__":  # pragma: no cover
 
     # while developing/debugging *********
