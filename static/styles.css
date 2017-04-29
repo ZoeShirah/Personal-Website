@@ -1,5 +1,7 @@
 body {
     margin:15px;
+    background-image:url("images/blue_background.jpg");
+    color:silver;
 }
 
 nav {
@@ -40,3 +42,11 @@ nav {
   width: auto;
 }
 
+#first {
+  font-weight: bold;
+  color:silver;
+}
+
+a {
+  color:#ff8e3c;
+}

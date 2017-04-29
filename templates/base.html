@@ -2,8 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Zoe S. G-S - {% block title %}PAGE TITLE GOES HERE{% endblock %}</title>
 
 <script src="http://code.jquery.com/jquery.js"></script>
@@ -19,13 +19,10 @@
 
 <link rel="stylesheet" href='/static/styles.css'>
 
-
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
-
-    <title>Carousel Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
@@ -65,7 +62,7 @@
       <ul class="nav navbar-nav">
         <li class="{% block nav_homepage %}{% endblock %}"><a href="/">Homepage<span class="sr-only">(current)</span></a></li>
         <li class="{% block nav_bio %}{% endblock %}"><a href="#bio">About</a></li>
-        <li class="{% block nav_projects %}{% endblock %}"><a href="/projects">Projects</a></li>
+        <li class="{% block nav_projects %}{% endblock %}"><a href="#projects">Projects</a></li>
         <li class="{% block nav_contact %}{% endblock %}"><a href="/contact">Contact</a></li>
       </ul>
       <form class="navbar-form navbar-left" action='/search'>
