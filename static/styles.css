@@ -1,6 +1,8 @@
 body {
     margin:15px;
-    background-image:url("images/blue_background.jpg");
+    background-image:url("images/circuit.jpg");
+   /* background-repeat: no-repeat;*/
+    background-attachment: fixed;
     color:silver;
 }
 
@@ -49,4 +51,12 @@ nav {
 
 a {
   color:#ff8e3c;
+}
+
+.txt {
+  background-image: url("images/grey.jpg");
+}
+
+.text-muted {
+  color: silver;
 }
